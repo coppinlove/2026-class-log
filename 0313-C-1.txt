@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main()
+{
+    int food;
+    
+    
+    printf("다음 메뉴에서 번호를 선택하세요.");
+    printf("\n\n1:치킨 2:피자 3:떡볶이 4:햄버거 5~7: 랜덤 -- ");
+    scanf("%d", &food);
+    
+    
+    if(food == 1) {
+        printf("\n치킨");
+    }
+    
+    else if(food == 2) {
+        printf("\n피자");
+    }
+    
+    else if(food == 3) {
+        printf("\n떡볶이");
+    }
+    
+    else if(food == 4) {
+        printf("\n햄버거");
+    }
+    
+    else if(food >= 5 && food <=7) { //& 두개면 조건을 모두 만족할 때
+        printf("\n랜덤");
+    }
+    
+    else{
+        printf("\nerror");
+    }
+        
+    
+    return 0;
+}
+/*switch(menu)
+    {
+    
+        case 1:
+            printf("\n치킨");
+            break;
+            
+        case 2:
+            printf("\n피자");
+            break;
+            
+        case 3:
+            printf("\n떡볶이");
+            break;
+            
+        case 4:
+            printf("\n햄버거");
+            break;
+            
+        default:
+            printf("\nerror");
+            break;
+            
+            
+    }*/
