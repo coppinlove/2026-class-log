@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    
+    
+    char name[30];
+    int day;
+    float pay;
+    char rate;
+    
+    
+    printf("여행지 이름을 입력하세요:");
+    scanf("%s", name);
+    
+    printf("\n여행 일수를 입력하세요:");
+    scanf("%d", &day);
+    
+    printf("\n여행 경비를 입력하세요:");
+    scanf("%f", &pay);
+    
+    printf("\n여행 등급을 입력하세요:");
+    scanf(" %c", &rate);
+    
+    
+    printf("\n\n여행지:%s", name);
+    printf("\n여행 일수:%1d", day);
+    printf("\n여행 경비:%1.1f", pay);
+    printf("\n여행 등급:%c", rate);
+
+    return 0;
+}
+
+/*화면출력 format(서식)
+숫자 = ""없음, 문자 = ""사용
+scanf > 키보드로 입력
+문자열 - %s
+문자 - %c
+정수 - %d
+실수 - %f
+char 마지막 [] 안에는 null문자가 들어가기 때문에 제한 가능
+C언어도 마찬가지로 0부터 시작
+& = 주소를 의미
+문자열 %s앞에는 &를 사용하지 않음(문자열 자체가 주소이기 때문)
+%c 앞에는 앞에 공백을 사용(엔터키를 상쇄 시키기 위해)*/
