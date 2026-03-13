@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, sum, sub, mul;
+    char op;
+    double divi;
+   
+    
+    printf("첫번째 숫자를 입력하세요: ");
+    scanf("%d", &num1);
+    
+    printf("연산자 입력(+ - * /): ");
+    scanf(" %c", &op);
+    
+    printf("두번째 숫자를 입력하세요: ");
+    scanf("%d", &num2);
+    
+    
+    /*switch(op) {
+        
+        
+        case '+':
+        sum = num1 + num2;
+        printf("덧셈결과: %d", sum);
+        break;
+        
+        case '-':
+        sub = num1 - num2;
+        printf("뺄셈결과: %d", sub);
+        break;
+        
+        case '*':
+        mul = num1 * num2;
+        printf("곱셈결과: %d", mul);
+        break;
+    
+        case '/':
+        divi = (double)num1 / (double)num2;
+        printf("나눗셈결과: %.2f", divi);
+        break;
+        
+        default:
+        printf("error");
+        break;
+        
+        
+    }
+    */
+    
+    if (op == '+') {
+        sum = num1 + num2;
+        printf("덧셈결과: %d", sum);
+    }
+    
+    else if (op == '-') {
+        sub = num1 - num2;
+        printf("뺄셈결과: %d", sub);
+    }
+    
+    else if (op == '*') {
+        mul = num1 * num2;
+        printf("곱셈결과: %d", mul);
+    }
+    
+    else if (op == '/') {
+        divi = (double)num1 / (double)num2;
+        printf("나눗셈결과: %.2f", divi);
+    }
+    
+    
+    return 0;
+}
